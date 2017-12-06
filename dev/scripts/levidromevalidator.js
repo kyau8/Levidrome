@@ -226,6 +226,14 @@ export default class LevidromeValidator extends React.Component {
 					<FeaturedButtons clearInputs={this.clear} />
 					<div className="twitter"><Twitter /></div>
 				</div>
+<<<<<<< HEAD
+=======
+			</div>
+			<div className="featureButtons mobileButtons">
+				<FeaturedButtons clearInputs={this.clear} />
+				<div className="twitter"><Twitter /></div>
+			</div>
+>>>>>>> c18e094b7398d39f0aa863f95687b868b7a033c0
 			</main>
 		)
 	}
@@ -246,7 +254,7 @@ class FeaturedButtons extends React.Component {
 	render() {
 		return (
 			<div className="featureButtons clearfix">
-				<button className="clear" onClick={this.clearInput}>clear</button>
+				<button className="clear" onClick={this.clearInput}>Clear</button>
 			</div>
 		)
 	}
@@ -298,6 +306,7 @@ class MainInput extends React.Component {
 
 	render() {
 		return (
+<<<<<<< HEAD
 			<div className="row levidrome">
 				<div className="wrapper">
 					<form action="" className="col-2" onSubmit={this.handleSubmit}>
@@ -307,6 +316,17 @@ class MainInput extends React.Component {
 							value={this.props.displayFirst} />
 						<div className="clearfix">
 							<div className="wrapper">
+=======
+		<div className="row levidrome">
+			<div className="wrapper">
+				<form action=""	className="col-2" onSubmit={this.handleSubmit}>
+					<input type="text"
+						className="firstWord"
+						onChange={this.handleChange}
+						value={this.props.displayFirst} />
+					<div className="clearfix">
+						<div className="submit wrapper">
+>>>>>>> c18e094b7398d39f0aa863f95687b868b7a033c0
 								<div className="clearfix"><i className="fa fa-exchange fa-4x" aria-hidden="true"></i>
 								</div>
 								<div className="clearfix">
