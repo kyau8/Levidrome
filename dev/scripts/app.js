@@ -34,23 +34,23 @@ export const FooterNav = () => {
 }
 
 class App extends React.Component {
-    render() {
-    	return (
-				<Router> 
-					<div>
-						<main>
-							<Route exact path="/" component={LevidromeValidator} />
-						</main>
-							<Route exact path="/about" component={About} />
-							<Route exact path="/list" component={List} />
-							<Route exact path="/credits" component={Credits} />
-						<footer className="footer clearfix">
-							<div className="wrapper">
-								<FooterNav />
-							</div>
-						</footer>
-					</div>
-				</Router>
+	render() {
+		return (
+			<Router>
+				<div>
+					<main>
+						<Route exact path="/" component={LevidromeValidator} />
+					</main>
+					<Route exact path="/about" component={About} />
+					<Route exact path="/list" component={List} />
+					<Route exact path="/credits" component={Credits} />
+					<footer className="footer clearfix">
+						<div className="wrapper">
+							<FooterNav />
+						</div>
+					</footer>
+				</div>
+			</Router>
 
 		)
 	}
